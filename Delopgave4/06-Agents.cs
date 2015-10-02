@@ -88,19 +88,37 @@ namespace Delopgave4
 
         public int CurrentIndex
         {
-            get { return currentIndex; }
+            get { return _currentIndex; }
             set
             {
-                if (currentIndex != value)
+                if (_currentIndex != value)
                 {
-                    currentIndex = value;
+                    _currentIndex = value;
                     NotifyPropertyChanged();
                 }
             }
         }
-#endregion
+#endregion //Properties
 
-        private int currentIndex = -1;
+#region INotifyPropertyChanged implemetation
+
+        public new event PropertyChangedEventHandler PropertyChanged;
+
+        private void NotifyPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            var handler = PropertyChanged;
+            if (handler != null)
+            {
+                handler(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
+#endregion // INotifyPropertyChanged implemetation
+
+#region Fields
+
+        private int _currentIndex = -1;
+
+#endregion //Fields
     }  // Just to reference it from xaml
 
     
