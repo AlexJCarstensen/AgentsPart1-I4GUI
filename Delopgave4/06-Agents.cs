@@ -116,7 +116,7 @@ namespace Delopgave4
 
 #region Fields
 
-        private int _currentIndex = -1;
+        int _currentIndex = -1;
 
 #endregion //Fields
     }  // Just to reference it from xaml

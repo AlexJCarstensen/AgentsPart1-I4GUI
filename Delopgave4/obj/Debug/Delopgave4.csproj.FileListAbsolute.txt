@@ -11,3 +11,5 @@ D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave4\obj\Debug\Delopgave4
 D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave4\obj\Debug\Delopgave4.csproj.GenerateResource.Cache
 D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave4\obj\Debug\Delopgave4.exe
 D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave4\obj\Debug\Delopgave4.pdb
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave4\obj\Debug\Delopgave4.csprojResolveAssemblyReference.cache
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave4\obj\Debug\GeneratedInternalTypeHelper.g.cs
