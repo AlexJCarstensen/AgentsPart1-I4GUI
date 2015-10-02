@@ -1,0 +1,15 @@
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave3\bin\Debug\Delopgave3.exe.config
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave3\obj\Debug\Delopgave3.csprojResolveAssemblyReference.cache
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave3\obj\Debug\MainWindow.g.cs
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave3\obj\Debug\App.g.cs
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave3\obj\Debug\Delopgave3_MarkupCompile.cache
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave3\obj\Debug\Delopgave3_MarkupCompile.lref
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave3\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave3\bin\Debug\Delopgave3.exe
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave3\bin\Debug\Delopgave3.pdb
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave3\obj\Debug\MainWindow.baml
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave3\obj\Debug\Delopgave3.g.resources
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave3\obj\Debug\Delopgave3.Properties.Resources.resources
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave3\obj\Debug\Delopgave3.csproj.GenerateResource.Cache
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave3\obj\Debug\Delopgave3.exe
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave3\obj\Debug\Delopgave3.pdb

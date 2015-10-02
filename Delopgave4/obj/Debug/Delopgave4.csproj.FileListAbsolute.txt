@@ -1,0 +1,13 @@
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave4\bin\Debug\Delopgave4.exe.config
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave4\obj\Debug\MainWindow.g.cs
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave4\obj\Debug\App.g.cs
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave4\obj\Debug\Delopgave4_MarkupCompile.cache
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave4\obj\Debug\Delopgave4_MarkupCompile.lref
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave4\bin\Debug\Delopgave4.exe
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave4\bin\Debug\Delopgave4.pdb
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave4\obj\Debug\MainWindow.baml
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave4\obj\Debug\Delopgave4.g.resources
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave4\obj\Debug\Delopgave4.Properties.Resources.resources
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave4\obj\Debug\Delopgave4.csproj.GenerateResource.Cache
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave4\obj\Debug\Delopgave4.exe
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave4\obj\Debug\Delopgave4.pdb

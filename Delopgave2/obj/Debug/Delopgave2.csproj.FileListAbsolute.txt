@@ -1,0 +1,14 @@
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave2\bin\Debug\Delopgave2.exe.config
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave2\bin\Debug\Delopgave2.exe
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave2\bin\Debug\Delopgave2.pdb
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave2\obj\Debug\Delopgave2.csprojResolveAssemblyReference.cache
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave2\obj\Debug\MainWindow.g.cs
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave2\obj\Debug\App.g.cs
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave2\obj\Debug\Delopgave2_MarkupCompile.cache
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave2\obj\Debug\Delopgave2_MarkupCompile.lref
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave2\obj\Debug\MainWindow.baml
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave2\obj\Debug\Delopgave2.g.resources
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave2\obj\Debug\Delopgave2.Properties.Resources.resources
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave2\obj\Debug\Delopgave2.csproj.GenerateResource.Cache
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave2\obj\Debug\Delopgave2.exe
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave2\obj\Debug\Delopgave2.pdb
