@@ -7,6 +7,7 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
+using System.Windows.Media.Animation;
 
 
 namespace Delopgave4
@@ -83,6 +84,23 @@ namespace Delopgave4
 
 #endregion //Commands
 
+#region Properties
+
+        public int CurrentIndex
+        {
+            get { return currentIndex; }
+            set
+            {
+                if (currentIndex != value)
+                {
+                    currentIndex = value;
+                    NotifyPropertyChanged();
+                }
+            }
+        }
+#endregion
+
+        private int currentIndex = -1;
     }  // Just to reference it from xaml
 
     
