@@ -9,7 +9,10 @@
     <Window.DataContext>
         <local:Agents ></local:Agents>
     </Window.DataContext>
-    <DockPanel >
+    <Window.Resources>
+        <SolidColorBrush x:Key="myBrush" Color="OrangeRed"></SolidColorBrush>
+    </Window.Resources>
+    <DockPanel Background="{StaticResource myBrush}">
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="_File">
                 <MenuItem Header="_New" 
