@@ -30,6 +30,7 @@ namespace Delopgave6
         private void AddAgent()
         {
             Add(new Agent());
+            NotifyPropertyChanged("Count");
             CurrentIndex = Count - 1;
         }
 
@@ -49,6 +50,8 @@ namespace Delopgave6
         private void AgentDelete()
         {
             RemoveAt(CurrentIndex);
+            NotifyPropertyChanged("Count");
+
         }
 
 

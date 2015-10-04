@@ -6,10 +6,10 @@
         xmlns:local="clr-namespace:Delopgave6"
         mc:Ignorable="d"
         Title="MainWindow" Height="375" Width="525" SizeToContent="WidthAndHeight">
-    <Window.Resources>
-        <local:Agents x:Key="Agents"></local:Agents>
-    </Window.Resources>
-    <DockPanel DataContext="{StaticResource Agents}">
+    <Window.DataContext>
+        <local:Agents ></local:Agents>
+    </Window.DataContext>
+    <DockPanel >
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="_File">
                 <MenuItem Header="_New" 
@@ -119,23 +119,21 @@
                  IsSynchronizedWithCurrentItem="True"
                  DisplayMemberPath="CodeName"></ListBox>
         </Grid>
-        <StatusBar DockPanel.Dock="Bottom">
-            <StatusBarItem Content="Agents Count: "></StatusBarItem>
-            <StatusBarItem Name="sbiAgentCount"></StatusBarItem>
+      <StatusBar DockPanel.Dock="Bottom">
+           <StatusBarItem Content="Agents Count: "></StatusBarItem>
+            <StatusBarItem Name="sbiAgentCount" 
+                           Content="{Binding Path=Count}"></StatusBarItem>
             <StatusBarItem HorizontalAlignment="Right"
                            Name="sbiDate">
-                <StackPanel Orientation="Horizontal">
-                <TextBlock Margin="4,0"
-                           Name="tblkDate"
-                           Text="{Binding Path=Date}"></TextBlock>
-                <TextBlock Margin="4,0"
-                           Name="tblkTime"
-                           Text="{Binding Path=Time}"></TextBlock>
+                <StackPanel Orientation="Horizontal" Name="spClock">
+                    <TextBlock Margin="4,0" Name="tblkDate" Text="{Binding Path=Date}" />
+                    <TextBlock Margin="4,0" Name="tblkTime" Text="{Binding Path=Time}" />
                 </StackPanel>
             </StatusBarItem>
         </StatusBar>
-        
-      
+           
+
+
 
     </DockPanel>
     
