@@ -13,7 +13,7 @@ namespace Delopgave6
             Update();
         }
 
-        private void Update()
+        public void Update()
         {
             Date = DateTime.Now.ToLongDateString();
             Time = DateTime.Now.ToLongTimeString();
