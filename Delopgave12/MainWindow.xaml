@@ -19,6 +19,13 @@
                 <Setter Property="FontWeight" Value="Bold"></Setter>
             </Style>
 
+            <Style x:Key="BondStyle" TargetType="{x:Type TextBox}" BasedOn="{StaticResource TextboxStyle}">
+                <Style.Triggers>
+                    <DataTrigger Binding="{Binding Path=ID}" Value="007">
+                        <Setter Property="Foreground" Value="Red"></Setter>
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
             <Style x:Key="ButtonToolbarStyle" TargetType="{x:Type Button}">
                 <Setter Property="Foreground" Value="Red"></Setter>
                 <Setter Property="FontSize" Value="20"></Setter>
@@ -146,10 +153,10 @@
                  VerticalAlignment="Top"
                  HorizontalAlignment="Left"
                  Margin="100, 2, 0, 0"
-                 Name="txbID"
+                 x:Name="txbID"
                  Width="50"
                  Text="{Binding Path=ID}"
-                 Style="{StaticResource TextboxStyle}"></TextBox>
+                 Style="{StaticResource BondStyle}"></TextBox>
                 <TextBox Grid.Column="0"
                  VerticalAlignment="Top"
                  HorizontalAlignment="Left"
