@@ -9,26 +9,46 @@
     <Window.Resources>
         <local:Agents x:Key="Agents"></local:Agents>
     </Window.Resources>
-    <Window.CommandBindings>
-        <CommandBinding Command="ApplicationCommands.Close" Executed="CloseCommand_Executed"></CommandBinding>
-    </Window.CommandBindings>
-    <DockPanel Grid.Column="0" Grid.ColumnSpan="1" DataContext="{StaticResource Agents}">
+    <DockPanel DataContext="{StaticResource Agents}">
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="_File">
-                <MenuItem Header="Exit" Command="Close"></MenuItem>
+                <MenuItem Header="_New" 
+                          Command="{Binding NewCommand}"></MenuItem>
+                <MenuItem Header="_Open"
+                          Command="{Binding OpenCommand}"></MenuItem>
+                <MenuItem Header="_Save" 
+                          Command="{Binding SaveCommand}"></MenuItem>
+                <MenuItem Header="Save _As"
+                          Command="{Binding SaveAsCommand}"></MenuItem>
+                <MenuItem Header="E_xit" 
+                          Command="{Binding ExitCommand}"></MenuItem>
             </MenuItem>
             <MenuItem Header="_Agents">
-                <MenuItem Header="Add Agent" Command="{Binding AddCommand}"></MenuItem>
-                <MenuItem Header="Delete Agent" Command="{Binding DeleteCommand}"></MenuItem>
-                <MenuItem Header="Next Agent" Command="{Binding NextCommand}"></MenuItem>
-                <MenuItem Header="Last Agent" Command="{Binding PrevCommand}"></MenuItem>
+                <MenuItem Header="Add Agent" 
+                          Command="{Binding AddCommand}"></MenuItem>
+                <MenuItem Header="Delete Agent" 
+                          Command="{Binding DeleteCommand}"></MenuItem>
+                <MenuItem Header="Next Agent" 
+                          Command="{Binding NextCommand}"></MenuItem>
+                <MenuItem Header="Last Agent" 
+                          Command="{Binding PrevCommand}"></MenuItem>
             </MenuItem>
         </Menu>
-        <ToolBar DockPanel.Dock="Top">
-            <Button Content="&lt;" Command="{Binding PrevCommand}"></Button>
-            <Button Content="&gt;" Command="{Binding NextCommand}"></Button>
-            <Button Content="+" Command="{Binding AddCommand}"></Button>
-            <Button Content="-" Command="{Binding DeleteCommand}"></Button>
+        <ToolBar DockPanel.Dock="Top"
+                 Background="Aqua">
+            <Button Content="&lt;"
+                    Command="{Binding PrevCommand}"></Button>
+            <Button Content="&gt;" 
+                    Command="{Binding NextCommand}"></Button>
+            <Button Content="+" 
+                    Command="{Binding AddCommand}"></Button>
+            <Button Content="-" 
+                    Command="{Binding DeleteCommand}"></Button>
+            <Label Content="File Name:" 
+                   FontWeight="Bold"></Label>
+            <TextBox x:Name="tbxFileName"
+                     MinWidth="100"
+                     Background="White"></TextBox>
         </ToolBar>
 
         <Grid>
