@@ -11,6 +11,7 @@
     </Window.DataContext>
     <Window.Resources>
         <SolidColorBrush x:Key="myBrush" Color="Aqua"></SolidColorBrush>
+        <SolidColorBrush x:Key="myLabelBrush" Color="BlueViolet"></SolidColorBrush>
         <Style TargetType="TextBox">
             <Setter Property="FontFamily" Value="Times New Roman"></Setter>
             <Setter Property="FontWeight" Value="Bold"></Setter>
@@ -19,6 +20,12 @@
             <Setter Property="Foreground" Value="blue"></Setter>
             <Setter Property="FontSize" Value="20"></Setter>
             <Setter Property="Width" Value="20"></Setter>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="15"></Setter>
+            <Setter Property="FontFamily" Value="Calibri"></Setter>
+            <Setter Property="FontStyle" Value="italic"></Setter>
+            <Setter Property="Foreground" Value="{StaticResource myLabelBrush}"></Setter>
         </Style>
     </Window.Resources>
     <DockPanel Background="{DynamicResource ResourceKey=myBrush}">
