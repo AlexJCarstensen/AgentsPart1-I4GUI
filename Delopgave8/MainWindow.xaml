@@ -1,13 +1,13 @@
-﻿<Window x:Class="Delopgave7.MainWindow"
+﻿<Window x:Class="Delopgave8.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:delopgave7="clr-namespace:Delopgave7"
+        xmlns:local="clr-namespace:Delopgave8"
         mc:Ignorable="d"
-        Title="MainWindow" Height="375" Width="525" SizeToContent="WidthAndHeight">
+        Title="MainWindow" Height="350" Width="525">
     <Window.DataContext>
-        <delopgave7:Agents ></delopgave7:Agents>
+        <local:Agents ></local:Agents>
     </Window.DataContext>
     <Window.Resources>
         <SolidColorBrush x:Key="myBrush" Color="OrangeRed"></SolidColorBrush>
@@ -122,8 +122,8 @@
                  IsSynchronizedWithCurrentItem="True"
                  DisplayMemberPath="CodeName"></ListBox>
         </Grid>
-        <StatusBar DockPanel.Dock="Bottom"> 
-           <StatusBarItem Content="Agents Count: "></StatusBarItem>
+        <StatusBar DockPanel.Dock="Bottom">
+            <StatusBarItem Content="Agents Count: "></StatusBarItem>
             <StatusBarItem Name="sbiAgentCount" 
                            Content="{Binding Path=Count}"></StatusBarItem>
             <StatusBarItem HorizontalAlignment="Right"
@@ -134,10 +134,5 @@
                 </StackPanel>
             </StatusBarItem>
         </StatusBar>
-           
-
-
-
     </DockPanel>
-    
 </Window>
