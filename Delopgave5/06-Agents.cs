@@ -1,24 +1,32 @@
-﻿using System.Collections.ObjectModel;
+﻿using System;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.IO;
 using System.Runtime.CompilerServices;
+using System.Windows;
 using System.Windows.Input;
+using System.Xml.Serialization;
 
 namespace Delopgave5
 {
     public class Agents : ObservableCollection<Agent>, INotifyPropertyChanged
     {
+        private string _fileName = "";
+
         public Agents()
         {
+            if (!(bool) (DesignerProperties.IsInDesignModeProperty.GetMetadata(typeof (DependencyObject)).DefaultValue))
+                return;
             Add(new Agent("001", "Nina", "Assassination", "UpperVolta"));
             Add(new Agent("007", "James Bond", "Martinis", "North Korea"));
-            Add(new Agent("005", "Alex","Computer Engineering", "Making it work!"));
+            Add(new Agent("005", "Alex", "Computer Engineering", "Making it work!"));
         }
 
-#region Commands
+        #region Commands
 
         private ICommand _addCommand;
         public ICommand AddCommand => _addCommand ?? (_addCommand = new RelayCommand(AddAgent));
-        
+
         private void AddAgent()
         {
             Add(new Agent());
@@ -26,8 +34,9 @@ namespace Delopgave5
         }
 
         private ICommand _deleteCommand;
+
         public ICommand DeleteCommand
-         => _deleteCommand ?? (_deleteCommand = new RelayCommand(AgentDelete, AgentDelete_Cane));
+            => _deleteCommand ?? (_deleteCommand = new RelayCommand(AgentDelete, AgentDelete_Cane));
 
         private bool AgentDelete_Cane()
         {
@@ -75,7 +84,100 @@ namespace Delopgave5
                 --CurrentIndex;
         }
 
-#endregion //Commands
+        private ICommand _newCommand;
+
+        public ICommand NewCommand => _newCommand ?? (_newCommand = new RelayCommand(NewCommand_Execute));
+
+        private void NewCommand_Execute()
+        {
+            MessageBoxResult res = MessageBox.Show("Any unsaved data will be lost! are you sure you want to continue",
+                "Warning", MessageBoxButton.YesNo, MessageBoxImage.Question, MessageBoxResult.No);
+            if (res == MessageBoxResult.Yes)
+            {
+                Clear();
+                _fileName = "";
+            }
+        }
+
+        private ICommand _openCommand;
+        public ICommand OpenCommand => _openCommand ?? (_openCommand = new RelayCommand<string>(OpenCommand_Execute));
+
+        private void OpenCommand_Execute(string argFileName)
+        {
+            if (argFileName == "")
+            {
+                MessageBox.Show("You must enter a filename in the file name textbox!", "unable to save file",
+                    MessageBoxButton.OK, MessageBoxImage.Exclamation);
+            }
+            else
+            {
+                _fileName = argFileName;
+                Agents tempAgents = new Agents();
+
+                XmlSerializer serializer = new XmlSerializer(typeof(Agents));
+                try
+                {
+                    TextReader reader = new StreamReader(_fileName);
+
+                    tempAgents = (Agents) serializer.Deserialize(reader);
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Unable to open file", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+                Clear();
+                foreach (var agent in tempAgents)
+                {
+                    Add(agent);
+                }
+            }
+        }
+
+        private ICommand _saveCommand;
+        public ICommand SaveCommand => _saveCommand ?? (_saveCommand = new RelayCommand(SaveCommand_Execute, SaveCommand_CanExecute));
+
+        private bool SaveCommand_CanExecute()
+        {
+            return (_fileName != "") && (Count > 0);
+        }
+
+        private void SaveCommand_Execute()
+        {
+            XmlSerializer serializer = new XmlSerializer(typeof(Agents));
+            TextWriter writer = new StreamWriter(_fileName);
+
+            serializer.Serialize(writer,this);
+            writer.Close();
+        }
+        private ICommand _saveAsCommand;
+        public ICommand SaveAsCommand => _saveAsCommand ?? (_saveAsCommand = new RelayCommand<string>(SaveAsCommand_Execute));
+
+        private void SaveAsCommand_Execute(string argFileName)
+        {
+            if (argFileName == "")
+            {
+                MessageBox.Show("You must enter a filename in the file name textbox!", "unable to save file",
+                    MessageBoxButton.OK, MessageBoxImage.Exclamation);
+            }
+            else
+            {
+                _fileName = argFileName;
+                SaveCommand_Execute();
+            }
+
+        }
+
+        private ICommand _exitCommand;
+
+        public ICommand ExitCommand => _exitCommand ?? (_exitCommand = new RelayCommand(ExitCommand_Execute));
+
+        private void ExitCommand_Execute()
+        {
+            Application.Current.MainWindow.Close();
+        }
+        
+        #endregion //Commands
 
 #region Properties
 
