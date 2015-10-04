@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Delopgave6"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="375" Width="525" SizeToContent="WidthAndHeight">
     <Window.Resources>
         <local:Agents x:Key="Agents"></local:Agents>
     </Window.Resources>
@@ -51,7 +51,7 @@
                      Background="White"></TextBox>
         </ToolBar>
 
-        <Grid>
+        <Grid DockPanel.Dock="Top">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="250*"></ColumnDefinition>
                 <ColumnDefinition Width="200*"></ColumnDefinition>
@@ -119,6 +119,24 @@
                  IsSynchronizedWithCurrentItem="True"
                  DisplayMemberPath="CodeName"></ListBox>
         </Grid>
+        <StatusBar DockPanel.Dock="Bottom">
+            <StatusBarItem Content="Agents Count: "></StatusBarItem>
+            <StatusBarItem Name="sbiAgentCount"></StatusBarItem>
+            <StatusBarItem HorizontalAlignment="Right"
+                           Name="sbiDate">
+                <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="4,0"
+                           Name="tblkDate"
+                           Text="{Binding Path=Date}"></TextBlock>
+                <TextBlock Margin="4,0"
+                           Name="tblkTime"
+                           Text="{Binding Path=Time}"></TextBlock>
+                </StackPanel>
+            </StatusBarItem>
+        </StatusBar>
+        
+      
 
     </DockPanel>
+    
 </Window>
