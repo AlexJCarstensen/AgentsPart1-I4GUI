@@ -10,9 +10,9 @@
         <local:Agents ></local:Agents>
     </Window.DataContext>
     <Window.Resources>
-        <SolidColorBrush x:Key="myBrush" Color="OrangeRed"></SolidColorBrush>
+        <SolidColorBrush x:Key="myBrush" Color="Aqua"></SolidColorBrush>
     </Window.Resources>
-    <DockPanel Background="{StaticResource myBrush}">
+    <DockPanel Background="{DynamicResource ResourceKey=myBrush}">
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="_File">
                 <MenuItem Header="_New" 
@@ -35,6 +35,23 @@
                           Command="{Binding NextCommand}"></MenuItem>
                 <MenuItem Header="Last Agent" 
                           Command="{Binding PrevCommand}"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="_Color">
+                <MenuItem Header="_Orange" 
+                          Command="{Binding ColorCommand}" 
+                          CommandParameter="Orange"></MenuItem>
+                <MenuItem Header="_Green" 
+                          Command="{Binding ColorCommand}" 
+                          CommandParameter="Green"></MenuItem>
+                <MenuItem Header="_Yello" 
+                          Command="{Binding ColorCommand}" 
+                          CommandParameter="Yellow"></MenuItem>
+                <MenuItem Header="_Black"
+                          Command="{Binding ColorCommand}" 
+                          CommandParameter="Black"></MenuItem>
+                <MenuItem Header="_White"
+                          Command="{Binding ColorCommand}"
+                          CommandParameter="White"></MenuItem>
             </MenuItem>
         </Menu>
         <ToolBar DockPanel.Dock="Top"
