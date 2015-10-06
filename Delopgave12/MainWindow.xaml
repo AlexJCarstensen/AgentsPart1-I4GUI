@@ -192,7 +192,8 @@
                  ItemsSource="{Binding}"
                  SelectedIndex="{Binding CurrentIndex}"
                  IsSynchronizedWithCurrentItem="True"
-                 DisplayMemberPath="CodeName"></ListBox>
+                 DisplayMemberPath="CodeName"
+                 ItemTemplate=""></ListBox>
             </Grid>
             <StatusBar DockPanel.Dock="Bottom">
                 <StatusBarItem Content="Agents Count: "></StatusBarItem>

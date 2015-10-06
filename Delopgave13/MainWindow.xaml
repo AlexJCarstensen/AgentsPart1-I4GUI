@@ -144,6 +144,8 @@
                  Text="{Binding Path=Assignment}"
                  Style="{StaticResource TextboxStyle}"></TextBox>
 
+            
+
             <ListBox Grid.Column="1"
                  VerticalAlignment="Top"
                  HorizontalAlignment="Left"
@@ -154,7 +156,7 @@
                  ItemsSource="{Binding}"
                  SelectedIndex="{Binding CurrentIndex}"
                  IsSynchronizedWithCurrentItem="True"
-                 DisplayMemberPath="CodeName"></ListBox>
+                 ItemTemplate="{StaticResource agentTemplate}"></ListBox>
         </Grid>
         <StatusBar DockPanel.Dock="Bottom">
             <StatusBarItem Content="Agents Count: "></StatusBarItem>
