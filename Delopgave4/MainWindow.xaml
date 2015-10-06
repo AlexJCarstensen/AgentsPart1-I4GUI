@@ -6,29 +6,24 @@
         xmlns:local="clr-namespace:Delopgave4"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Window.Resources>
-        <local:Agents x:Key="Agents"></local:Agents>
-    </Window.Resources>
-    <Window.CommandBindings>
-        <CommandBinding Command="ApplicationCommands.Close" Executed="CloseCommand_Executed"></CommandBinding>
-    </Window.CommandBindings>
-        <DockPanel Grid.Column="0" Grid.ColumnSpan="1" DataContext="{StaticResource Agents}">
+    
+        <DockPanel Grid.Column="0" Grid.ColumnSpan="1">
             <Menu DockPanel.Dock="Top">
                 <MenuItem Header="_File">
-                    <MenuItem Header="Exit" Command="Close"></MenuItem>
+                    <MenuItem Header="Exit"></MenuItem>
                 </MenuItem>
                 <MenuItem Header="_Agents">
-                    <MenuItem Header="Add Agent" Command="{Binding AddCommand}"></MenuItem>
-                    <MenuItem Header="Delete Agent" Command="{Binding DeleteCommand}"></MenuItem>
-                    <MenuItem Header="Next Agent" Command="{Binding NextCommand}"></MenuItem>
-                    <MenuItem Header="Last Agent" Command="{Binding PrevCommand}"></MenuItem>
+                    <MenuItem Header="Add Agent"></MenuItem>
+                    <MenuItem Header="Delete Agent"></MenuItem>
+                    <MenuItem Header="Next Agent"></MenuItem>
+                    <MenuItem Header="Last Agent"></MenuItem>
                 </MenuItem>
             </Menu>
             <ToolBar DockPanel.Dock="Top">
-                <Button Content="&lt;" Command="{Binding PrevCommand}"></Button>
-                <Button Content="&gt;" Command="{Binding NextCommand}"></Button>
-                <Button Content="+" Command="{Binding AddCommand}"></Button>
-                <Button Content="-" Command="{Binding DeleteCommand}"></Button>
+                <Button Content="&lt;"></Button>
+                <Button Content="&gt;"></Button>
+                <Button Content="+"></Button>
+                <Button Content="-"></Button>
             </ToolBar>
 
         <Grid>
@@ -95,7 +90,6 @@
                  MinWidth="190"
                  Name="lsbNames"
                  ItemsSource="{Binding}"
-                 SelectedIndex="{Binding CurrentIndex}"
                  IsSynchronizedWithCurrentItem="True"
                  DisplayMemberPath="CodeName"></ListBox>
         </Grid>

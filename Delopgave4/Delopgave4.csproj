@@ -61,7 +61,6 @@
     </Page>
     <Compile Include="06-Agent.cs" />
     <Compile Include="06-RelayCommand.cs" />
-    <Compile Include="06-Agents.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
