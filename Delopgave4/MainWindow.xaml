@@ -5,26 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Delopgave4"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    
-        <DockPanel Grid.Column="0" Grid.ColumnSpan="1">
-            <Menu DockPanel.Dock="Top">
-                <MenuItem Header="_File">
-                    <MenuItem Header="Exit"></MenuItem>
-                </MenuItem>
-                <MenuItem Header="_Agents">
-                    <MenuItem Header="Add Agent"></MenuItem>
-                    <MenuItem Header="Delete Agent"></MenuItem>
-                    <MenuItem Header="Next Agent"></MenuItem>
-                    <MenuItem Header="Last Agent"></MenuItem>
-                </MenuItem>
-            </Menu>
-            <ToolBar DockPanel.Dock="Top">
-                <Button Content="&lt;"></Button>
-                <Button Content="&gt;"></Button>
-                <Button Content="+"></Button>
-                <Button Content="-"></Button>
-            </ToolBar>
+        Title="MainWindow"
+        Height="350"
+        Width="525">
+
+    <DockPanel Grid.Column="0"
+               Grid.ColumnSpan="1">
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_File">
+                <MenuItem Header="Exit"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="_Agents">
+                <MenuItem Header="Add Agent"></MenuItem>
+                <MenuItem Header="Delete Agent"></MenuItem>
+                <MenuItem Header="Next Agent"></MenuItem>
+                <MenuItem Header="Last Agent"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <ToolBar DockPanel.Dock="Top">
+            <Button Content="&lt;"></Button>
+            <Button Content="&gt;"></Button>
+            <Button Content="+"></Button>
+            <Button Content="-"></Button>
+        </ToolBar>
 
         <Grid>
             <Grid.ColumnDefinitions>
@@ -33,66 +36,66 @@
             </Grid.ColumnDefinitions>
 
             <Label Grid.Column="0"
-               VerticalAlignment="Top"
-               HorizontalAlignment="Left"
-               Margin="10, 0, 0, 0"
-               Content="Id"></Label>
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Left"
+                   Margin="10, 0, 0, 0"
+                   Content="Id"></Label>
             <Label Grid.Column="0"
-               VerticalAlignment="Top"
-               HorizontalAlignment="Left"
-               Margin="10, 30, 0, 0"
-               Content="CodeName"></Label>
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Left"
+                   Margin="10, 30, 0, 0"
+                   Content="CodeName"></Label>
             <Label Grid.Column="0"
-               VerticalAlignment="Top"
-               HorizontalAlignment="Left"
-               Margin="10, 60, 0, 0"
-               Content="Speciality"></Label>
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Left"
+                   Margin="10, 60, 0, 0"
+                   Content="Speciality"></Label>
             <Label Grid.Column="0"
-               VerticalAlignment="Top"
-               HorizontalAlignment="Left"
-               Margin="10, 90, 0, 0"
-               Content="Assignment"></Label>
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Left"
+                   Margin="10, 90, 0, 0"
+                   Content="Assignment"></Label>
 
             <TextBox Grid.Column="0"
-                 VerticalAlignment="Top"
-                 HorizontalAlignment="Left"
-                 Margin="100, 2, 0, 0"
-                 Name="txbID"
-                 Width="50"
-                 Text="{Binding Path=ID}"></TextBox>
+                     VerticalAlignment="Top"
+                     HorizontalAlignment="Left"
+                     Margin="100, 2, 0, 0"
+                     Name="txbID"
+                     Width="50"
+                     Text="{Binding Path=ID}"></TextBox>
             <TextBox Grid.Column="0"
-                 VerticalAlignment="Top"
-                 HorizontalAlignment="Left"
-                 Margin="100, 32, 0, 0"
-                 Name="txbCodeName"
-                 Width="120"
-                 Text="{Binding Path=CodeName}"></TextBox>
+                     VerticalAlignment="Top"
+                     HorizontalAlignment="Left"
+                     Margin="100, 32, 0, 0"
+                     Name="txbCodeName"
+                     Width="120"
+                     Text="{Binding Path=CodeName}"></TextBox>
             <TextBox Grid.Column="0"
-                 VerticalAlignment="Top"
-                 HorizontalAlignment="Left"
-                 Margin="100, 62, 0, 0"
-                 Name="txbSpeciality"
-                 Width="120"
-                 Text="{Binding Path=Speciality}"></TextBox>
+                     VerticalAlignment="Top"
+                     HorizontalAlignment="Left"
+                     Margin="100, 62, 0, 0"
+                     Name="txbSpeciality"
+                     Width="120"
+                     Text="{Binding Path=Speciality}"></TextBox>
             <TextBox Grid.Column="0"
-                 VerticalAlignment="Top"
-                 HorizontalAlignment="Left"
-                 Margin="100, 92, 0, 0"
-                 Name="txbAssignment"
-                 Width="120"
-                 Text="{Binding Path=Assignment}"></TextBox>
+                     VerticalAlignment="Top"
+                     HorizontalAlignment="Left"
+                     Margin="100, 92, 0, 0"
+                     Name="txbAssignment"
+                     Width="120"
+                     Text="{Binding Path=Assignment}"></TextBox>
 
             <ListBox Grid.Column="1"
-                 VerticalAlignment="Top"
-                 HorizontalAlignment="Left"
-                 Margin="3, 3, 3, 3"
-                 MinHeight="250"
-                 MinWidth="190"
-                 Name="lsbNames"
-                 ItemsSource="{Binding}"
-                 IsSynchronizedWithCurrentItem="True"
-                 DisplayMemberPath="CodeName"></ListBox>
+                     VerticalAlignment="Top"
+                     HorizontalAlignment="Left"
+                     Margin="3, 3, 3, 3"
+                     MinHeight="250"
+                     MinWidth="190"
+                     Name="lsbNames"
+                     ItemsSource="{Binding}"
+                     IsSynchronizedWithCurrentItem="True"
+                     DisplayMemberPath="CodeName"></ListBox>
         </Grid>
-            
+
     </DockPanel>
 </Window>

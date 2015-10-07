@@ -41,7 +41,7 @@ namespace Delopgave3 {
     public partial class MainWindow : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
         
-        #line 12 "..\..\MainWindow.xaml"
+        #line 15 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Grid agentGrid;
         
@@ -49,7 +49,7 @@ namespace Delopgave3 {
         #line hidden
         
         
-        #line 43 "..\..\MainWindow.xaml"
+        #line 47 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBox txbID;
         
@@ -57,7 +57,7 @@ namespace Delopgave3 {
         #line hidden
         
         
-        #line 50 "..\..\MainWindow.xaml"
+        #line 54 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBox txbCodeName;
         
@@ -65,7 +65,7 @@ namespace Delopgave3 {
         #line hidden
         
         
-        #line 57 "..\..\MainWindow.xaml"
+        #line 61 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBox txbSpeciality;
         
@@ -73,7 +73,7 @@ namespace Delopgave3 {
         #line hidden
         
         
-        #line 64 "..\..\MainWindow.xaml"
+        #line 68 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBox txbAssignment;
         
@@ -81,7 +81,7 @@ namespace Delopgave3 {
         #line hidden
         
         
-        #line 74 "..\..\MainWindow.xaml"
+        #line 78 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button btBack;
         
@@ -89,7 +89,7 @@ namespace Delopgave3 {
         #line hidden
         
         
-        #line 83 "..\..\MainWindow.xaml"
+        #line 86 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button btForward;
         
@@ -97,7 +97,7 @@ namespace Delopgave3 {
         #line hidden
         
         
-        #line 92 "..\..\MainWindow.xaml"
+        #line 94 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button btNew;
         
@@ -105,7 +105,7 @@ namespace Delopgave3 {
         #line hidden
         
         
-        #line 102 "..\..\MainWindow.xaml"
+        #line 103 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.ListBox lsbNames;
         

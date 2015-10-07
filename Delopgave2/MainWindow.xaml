@@ -5,12 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Delopgave2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid Name="AgentGrid" ShowGridLines="false">
-       <Grid.ColumnDefinitions>
+        Title="MainWindow"
+        Height="350"
+        Width="525">
+    <Grid Name="AgentGrid"
+          ShowGridLines="false">
+        <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"></ColumnDefinition>
             <ColumnDefinition Width="Auto"></ColumnDefinition>
-            
+
         </Grid.ColumnDefinitions>
         <!--første række-->
         <TextBlock Grid.Column="0"
@@ -35,42 +38,44 @@
         </TextBlock>
         <!--3 række-->
         <TextBox Grid.Column="0"
-                   Margin="100,10,0,0"
-                   VerticalAlignment="Top"
-                   HorizontalAlignment="Left"
-                   Width="60"
-                   Name="txbxID"
-                   Text="{Binding Path=ID}">
+                 Margin="100,10,0,0"
+                 VerticalAlignment="Top"
+                 HorizontalAlignment="Left"
+                 Width="60"
+                 Name="txbxID"
+                 Text="{Binding Path=ID}">
         </TextBox>
         <TextBox Grid.Column="0"
-                   Margin="100,39,14,0"
-                   VerticalAlignment="Top"
-                   HorizontalAlignment="Left"
-                   Width="100"
-                   Name="txbxCode"
-                   Text="{Binding Path=CodeName}">
+                 Margin="100,39,14,0"
+                 VerticalAlignment="Top"
+                 HorizontalAlignment="Left"
+                 Width="100"
+                 Name="txbxCode"
+                 Text="{Binding Path=CodeName}">
         </TextBox>
         <TextBox Grid.Column="0"
-                   Margin="100,74,14,0"
-                   VerticalAlignment="Top"
-                   HorizontalAlignment="Left"
-                   Width="100"
-                   Name="txbxSpeciality"
-                   Text="{Binding Path=Speciality}">
+                 Margin="100,74,14,0"
+                 VerticalAlignment="Top"
+                 HorizontalAlignment="Left"
+                 Width="100"
+                 Name="txbxSpeciality"
+                 Text="{Binding Path=Speciality}">
         </TextBox>
         <TextBox Grid.Column="0"
-                   Margin="100,109,14,0"
-                   VerticalAlignment="Top"
-                   HorizontalAlignment="Left"
-                   Width="100"
-                   Name="txbxAssignment"
-                   Text="{Binding Path=Assignment}">
+                 Margin="100,109,14,0"
+                 VerticalAlignment="Top"
+                 HorizontalAlignment="Left"
+                 Width="100"
+                 Name="txbxAssignment"
+                 Text="{Binding Path=Assignment}">
         </TextBox>
-            <ListBox ItemsSource="{Binding}"
-                     IsSynchronizedWithCurrentItem="True"
-                     DisplayMemberPath="CodeName"
-                     Name="lbxAgents"
-                     Grid.Column="1" Margin="9"></ListBox>
-        
+        <ListBox ItemsSource="{Binding}"
+                 IsSynchronizedWithCurrentItem="True"
+                 DisplayMemberPath="CodeName"
+                 Name="lbxAgents"
+                 Grid.Column="1"
+                 Margin="9"
+                 Width="275"></ListBox>
+
     </Grid>
 </Window>

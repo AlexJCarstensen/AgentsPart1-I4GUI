@@ -5,11 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Delopgave3"
         mc:Ignorable="d"
-        Title="MainWindow" Height="400" Width="600">
+        Title="MainWindow"
+        Height="400"
+        Width="600">
     <Window.Resources>
         <local:Agents x:Key="agents"></local:Agents>
     </Window.Resources>
-    <Grid ShowGridLines="False"  Name="agentGrid" DataContext="{StaticResource agents}">
+    <Grid ShowGridLines="False"
+          Name="agentGrid"
+          DataContext="{StaticResource agents}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="270*"></ColumnDefinition>
             <ColumnDefinition Width="250*"></ColumnDefinition>
@@ -72,8 +76,7 @@
                 Height="23"
                 Width="75"
                 Name="btBack"
-                Content="&lt;"
-                ></Button>
+                Content="&lt;"></Button>
         <Button Grid.Column="0"
                 VerticalAlignment="Top"
                 HorizontalAlignment="Left"
@@ -81,8 +84,7 @@
                 Height="23"
                 Width="75"
                 Name="btForward"
-                Content="&gt;"
-                ></Button>
+                Content="&gt;"></Button>
         <Button Grid.Column="0"
                 VerticalAlignment="Top"
                 HorizontalAlignment="Left"
@@ -90,8 +92,7 @@
                 Height="23"
                 Width="75"
                 Name="btNew"
-                Content="Add New"
-                ></Button>
+                Content="Add New"></Button>
 
         <ListBox Grid.Column="1"
                  VerticalAlignment="Top"

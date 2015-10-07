@@ -41,7 +41,7 @@ namespace Delopgave4 {
     public partial class MainWindow : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
         
-        #line 60 "..\..\MainWindow.xaml"
+        #line 63 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBox txbID;
         
@@ -49,7 +49,7 @@ namespace Delopgave4 {
         #line hidden
         
         
-        #line 67 "..\..\MainWindow.xaml"
+        #line 70 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBox txbCodeName;
         
@@ -57,7 +57,7 @@ namespace Delopgave4 {
         #line hidden
         
         
-        #line 74 "..\..\MainWindow.xaml"
+        #line 77 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBox txbSpeciality;
         
@@ -65,7 +65,7 @@ namespace Delopgave4 {
         #line hidden
         
         
-        #line 81 "..\..\MainWindow.xaml"
+        #line 84 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBox txbAssignment;
         
@@ -73,7 +73,7 @@ namespace Delopgave4 {
         #line hidden
         
         
-        #line 91 "..\..\MainWindow.xaml"
+        #line 94 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.ListBox lsbNames;
         
