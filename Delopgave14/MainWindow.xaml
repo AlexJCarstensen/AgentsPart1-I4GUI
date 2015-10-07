@@ -5,10 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Delopgave14"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" SizeToContent="WidthAndHeight">
     <Window.DataContext>
         <local:Agents ></local:Agents>
     </Window.DataContext>
+    <Window.Resources>
+        <local:BlueColorConverterID007 x:Key="IDToColorConverter"></local:BlueColorConverterID007>
+        <DataTemplate x:Key="agentTemplate">
+            <WrapPanel>
+                <TextBlock Text="{Binding Path=ID}" 
+                           Foreground="{Binding Path=ID, Converter={StaticResource IDToColorConverter}}"
+                           Padding="3, 0"
+                           Width="50"></TextBlock>
+                <TextBlock Text="{Binding Path=CodeName}" 
+                           Foreground="{Binding Path=ID, Converter={StaticResource IDToColorConverter}}"
+                           Padding="3, 0"
+                           Width="100"></TextBlock>
+                <TextBlock Text="{Binding Path=Speciality}" 
+                           Foreground="{Binding Path=ID, Converter={StaticResource IDToColorConverter}}"
+                           Padding="3, 0"
+                           Width="150"></TextBlock>
+                <TextBlock Text="{Binding Path=Assignment}" 
+                           Foreground="{Binding Path=ID, Converter={StaticResource IDToColorConverter}}"
+                           Padding="3, 0"
+                           ></TextBlock>
+            </WrapPanel>
+        </DataTemplate>
+    </Window.Resources>
 
     <DockPanel Background="{DynamicResource ResourceKey=myBrush}" >
         <Menu DockPanel.Dock="Top">
@@ -110,6 +133,8 @@
                HorizontalAlignment="Left"
                Margin="10, 90, 0, 0"
                Content="Assignment"></Label>
+            
+           
 
             <TextBox Grid.Column="0"
                  VerticalAlignment="Top"
@@ -136,7 +161,7 @@
                  Text="{Binding Path=Speciality}"
                  Style="{StaticResource TextboxStyle}"></TextBox>
             <TextBox Grid.Column="0"
-                 VerticalAlignment="Top"
+                 VerticalAlignment="Stretch"
                  HorizontalAlignment="Left"
                  Margin="100, 92, 0, 0"
                  Name="txbAssignment"
@@ -144,15 +169,21 @@
                  Text="{Binding Path=Assignment}"
                  Style="{StaticResource TextboxStyle}"></TextBox>
 
+            <GridSplitter Grid.Column="1"
+                          HorizontalAlignment="Center"
+                          VerticalAlignment="Stretch"
+                          Width="5"
+                          />
+            
             <ListBox Grid.Column="1"
                  VerticalAlignment="Top"
                  HorizontalAlignment="Left"
-                 Margin="3, 3, 3, 3"
+                 Margin="9"
                  MinHeight="250"
-                 MinWidth="190"
+                 MinWidth="300"
                  Name="lsbNames"
                  ItemsSource="{Binding}"
-                 SelectedIndex="{Binding CurrentIndex}"
+                 SelectedIndex="{Binding Path=CurrentIndex}"
                  IsSynchronizedWithCurrentItem="True"
                  ItemTemplate="{StaticResource agentTemplate}"></ListBox>
         </Grid>

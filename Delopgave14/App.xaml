@@ -41,22 +41,7 @@
                 <Setter Property="Foreground" Value="{StaticResource myLabelBrush}"></Setter>
             </Style>
         
-        <DataTemplate x:Key="agentTemplate">
-            <WrapPanel>
-                <TextBlock Text="{Binding Path=ID}" 
-                           Padding="3, 0"
-                           Width="50"></TextBlock>
-                <TextBlock Text="{Binding Path=CodeName}" 
-                           Padding="3, 0"
-                           Width="50"></TextBlock>
-                <TextBlock Text="{Binding Path=Speciality}" 
-                           Padding="3, 0"
-                           Width="50"></TextBlock>
-                <TextBlock Text="{Binding Path=Assignment}" 
-                           Padding="3, 0"
-                           Width="50"></TextBlock>
-            </WrapPanel>
-        </DataTemplate>
+        
        
     </Application.Resources>
 </Application>
