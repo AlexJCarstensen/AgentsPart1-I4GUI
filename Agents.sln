@@ -15,8 +15,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delopgave5", "Delopgave5\De
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delopgave6", "Delopgave6\Delopgave6.csproj", "{DEC742B7-A125-4E42-B15A-620815FFF936}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delopgave14", "Delopgave14\Delopgave14.csproj", "{92802721-AD95-46F0-BA07-889CA79B07D1}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,10 +45,6 @@ Global
 		{DEC742B7-A125-4E42-B15A-620815FFF936}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEC742B7-A125-4E42-B15A-620815FFF936}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEC742B7-A125-4E42-B15A-620815FFF936}.Release|Any CPU.Build.0 = Release|Any CPU
-		{92802721-AD95-46F0-BA07-889CA79B07D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{92802721-AD95-46F0-BA07-889CA79B07D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{92802721-AD95-46F0-BA07-889CA79B07D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{92802721-AD95-46F0-BA07-889CA79B07D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

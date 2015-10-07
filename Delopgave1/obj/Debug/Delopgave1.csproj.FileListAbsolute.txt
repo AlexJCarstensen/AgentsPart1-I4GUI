@@ -13,3 +13,6 @@ D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave1\obj\Debug\Delopgave1
 D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave1\obj\Debug\Delopgave1.exe
 D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave1\obj\Debug\Delopgave1.pdb
 D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\Agents\Delopgave1\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\AgentsPart1-I4GUI\Delopgave1\bin\Debug\Delopgave1.exe.config
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\AgentsPart1-I4GUI\Delopgave1\obj\Debug\Delopgave1.exe
+D:\OneDrive\4 Semester\GUI\Lektion 07\LAB\AgentsPart1-I4GUI\Delopgave1\obj\Debug\Delopgave1.pdb
